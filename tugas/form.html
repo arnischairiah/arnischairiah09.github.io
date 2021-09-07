@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    <body>
+        <div class="container">
+	<h1>Registration</h1>
+			<form method="POST" action="kirim.php">
+            <table>
+        <tr>
+        <td><label for="name">Nama Lengkap</label></td>
+        <td>:</td>
+        <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+		<td>Email</td>
+        <td>:</td>
+		<td><input type="email" id="email" name="email" multiple></td>
+        </tr>
+        <tr>
+		<td><label>Password</label></td>
+        <td>:</td>
+		<td><input type="password"></td>
+        </tr>
+        <tr>
+        <td><label>Lokasi:</label></td>
+        <td>:</td>
+        <td>
+               <select name="Lokasi">
+                    <option value="---Pilih Kota---">---Pilih Kota---</option>
+                    <option value="Medan">Medan</option>
+                    <option value="Binjai">Binjai</option>
+                    <option value="Tebing Tinggi">Tebing Tinggi</option>
+                    <option value="Tanjung balai">Tanjung balai</option> 
+                    <option value="Pematang Siantar">Pematang Siantar</option>
+                    <option value="Sibolga">Sibolga</option>
+                </select>
+        </td>
+        <tr>
+        <td>Skill bahasa pemrograman</td>
+        <td>:</td>
+        <td>
+        <input type="checkbox" id="Html" name="Html">
+        <label for="Html">Html</label>
+        <input type="checkbox" id="Javascript" name="Javascript">
+        <label for="Javascript">Javascript</label>
+        <input type="checkbox" id="Phyton" name="Phyton">
+        <label for="Phyton">Phyton</label>
+        <input type="checkbox" id="C++" name="C++">
+        <label for="C++">C++</label>
+        </td>
+        </tr>
+        <tr>
+           <td><label>Gender:</label></td>
+           <td>:</td>
+           <td>
+            <input type="radio" name="gender" value="laki-laki"/>laki-laki
+            <input type="radio" name="gender" value="perempuan"
+            checked="checked"/>perempuan
+            </td>
+        </tr>
+            <tr>
+                <td>About you</td>
+                <td>:</td>
+                <td><textarea name="About you" id="About you" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+            <button type="submit" name="button">Register</button>
+            <button type="reset" name="button">Reset</button>
+                </td>
+            </table>
+			</form>
+            </div>
+	</body>
+</html>
